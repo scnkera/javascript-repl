@@ -25,4 +25,56 @@
 // and appear under the VS Code Testing panel.
 
 // Replace with the code you'd like to run
-console.log('Hello, World!');
+// Replace with the code you'd like to run
+const calculateTotalPrice = function (order) {
+    let total = 0;
+   
+   
+    for (const item of order) {
+      total += item.price;
+    }
+   
+   
+    return total;
+   };
+   
+   
+   const myOrder = [
+    {
+      entre: "Fish Tacos",
+      price: 14.97,
+    },
+    {
+      entre: "Vegan Spaghetti",
+      price: 21.47,
+    },
+   ];
+   
+   
+   const myTotal = calculateTotalPrice(myOrder);
+   console.log(`The total is $${myTotal}`);
+   
+   
+   // const arr = ['red', 'green', 'blue'];
+   // const [val1, val2, val3] = arr;
+   // console.log(val1);
+   // console.log(val2);
+   // console.log(val3);
+   
+   
+   // const obj = {
+   //   name: 'Ash',
+   //   color: 'gray',
+   // };
+   
+   
+   // const { name, color } = obj;
+   
+   
+   // console.log(name);
+   // console.log(color);
+   
+   
+//    const newObj = {name, color};
+//    console.log(newObj);
+   
